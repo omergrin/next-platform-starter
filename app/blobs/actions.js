@@ -1,4 +1,5 @@
 'use server';
+import "hud-sdk/register"; 
 import { getStore } from '@netlify/blobs';
 import { uploadDisabled } from 'utils';
 
