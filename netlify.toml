@@ -6,9 +6,3 @@
   included_files = ["hud-wrapper"]
   node_bundler = "esbuild"
   external_node_modules = ["hud-sdk"]
-
-[functions.environment]
-  HUD_ENABLE = "true"
-  HUD_KEY = "@hud-key"
-  HUD_SERVICE = "@hud-service"
-  AWS_LAMBDA_EXEC_WRAPPER = "./hud-wrapper"
