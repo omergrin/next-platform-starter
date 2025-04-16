@@ -3,15 +3,14 @@
   command = "npm run build"
 
 [functions]
-  included_files = ["hud-wrapper", "node_modules/hud-sdk/**/*"]
+  included_files = ["hud-wrapper"]
 
 [functions."*"]
   node_bundler = "esbuild"
-  external_node_modules = ["hud-sdk"]
+  external_node_modules = []
 
 [functions.environment]
   HUD_ENABLE = "true"
   HUD_KEY = "@hud-key"
   HUD_SERVICE = "@hud-service"
   AWS_LAMBDA_EXEC_WRAPPER = "./hud-wrapper"
-  NODE_PATH = "./node_modules"
