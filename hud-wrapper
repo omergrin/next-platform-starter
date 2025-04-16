@@ -7,10 +7,12 @@ env | grep HUD >&2
 
 # Debug node_modules locations
 echo "Checking node_modules directories:" >&2
-echo "/var/task/node_modules contents:" >&2
-ls -la /var/task/node_modules 2>&1
-echo "/var/task/node_modules/hud-sdk contents:" >&2
-ls -la /var/task/node_modules/hud-sdk 2>&1
+echo "/ contents:" >&2
+ls -la / 2>&1
+echo "/var/ contents:" >&2
+ls -la /var/ 2>&1
+echo "/var/task contents:" >&2
+ls -la /var/task 2>&1
 
 # Set NODE_PATH to include the function's directory
 export NODE_PATH="/var/task/node_modules:${NODE_PATH:-}"
