@@ -6,3 +6,4 @@
   included_files = ["hud-wrapper"]
   node_bundler = "esbuild"
   external_node_modules = ["hud-sdk"]
+  included_files = ["node_modules/hud-sdk/**","/var/task/node_modules/hud-sdk/**"]
