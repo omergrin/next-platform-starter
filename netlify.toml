@@ -4,6 +4,7 @@
 
 [functions]
   included_files = ["hud-wrapper"]
+  external_node_modules = ["hud-sdk"]
 
 [functions."*"]
   node_bundler = "esbuild"
