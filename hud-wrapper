@@ -13,6 +13,8 @@ echo "/var/ contents:" >&2
 ls -la /var/ 2>&1
 echo "/var/task contents:" >&2
 ls -la /var/task 2>&1
+echo "/var/task/node_modules contents:" >&2
+ls -la /var/task/node_modules 2>&1
 
 # Set NODE_PATH to include the function's directory
 export NODE_PATH="/var/task/node_modules:${NODE_PATH:-}"
