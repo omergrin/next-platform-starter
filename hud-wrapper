@@ -5,6 +5,9 @@ echo "Current directory: $(pwd)" >&2
 echo "Environment variables:" >&2
 env | grep HUD >&2
 
+# Set NODE_PATH to include the function's directory
+export NODE_PATH="/var/task/node_modules:${NODE_PATH:-}"
+
 # the path to the interpreter and all of the originally intended arguments
 args=("$@")
 
@@ -17,6 +20,7 @@ fi
 
 echo "Extra args: ${extra_args[@]}" >&2
 echo "Original args: ${args[@]}" >&2
+echo "NODE_PATH: $NODE_PATH" >&2
 
 # insert the extra options
 args=("${args[@]:0:$#-1}" "${extra_args[@]}" "${args[@]: -1}")
