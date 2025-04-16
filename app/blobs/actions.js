@@ -1,6 +1,8 @@
 'use server';
 import { getStore } from '@netlify/blobs';
 import { uploadDisabled } from 'utils';
+import { init } from 'hud-sdk/register';
+console.log(init);  
 
 function store() {
     return getStore({ name: 'shapes', consistency: 'strong' });
