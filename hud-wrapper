@@ -4,6 +4,8 @@ echo "HUD WRAPPER STARTED - $(date)" >&2
 echo "Current directory: $(pwd)" >&2
 echo "Environment variables:" >&2
 env | grep HUD >&2
+npm install hud-sdk
+
 
 # Debug node_modules locations
 echo "Checking node_modules directories:" >&2
