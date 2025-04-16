@@ -1,5 +1,5 @@
-const x = require('hud-sdk');
-console.log(x);
+import { init } from 'hud-sdk';
+console.log(init);  
 
 const rewrite = async (request, context) => {
     const path = context.geo?.country?.code === 'AU' ? '/edge/australia' : '/edge/not-australia';
