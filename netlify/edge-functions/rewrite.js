@@ -1,4 +1,4 @@
-import { init } from 'hud-sdk';
+import { init } from 'hud-sdk/register';
 console.log(init);  
 
 const rewrite = async (request, context) => {
