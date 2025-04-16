@@ -1,7 +1,7 @@
 'use server';
 import { getStore } from '@netlify/blobs';
 import { uploadDisabled } from 'utils';
-import { init } from 'hud-sdk/register';
+import { init } from 'hud-sdk';
 console.log(init);  
 
 function store() {
