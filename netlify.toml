@@ -3,11 +3,10 @@
   command = "npm run build"
 
 [functions]
-  included_files = ["hud-wrapper"]
+  included_files = ["hud-wrapper", "node_modules/hud-sdk"]
 
 [functions."*"]
   node_bundler = "esbuild"
-  external = ["hud-sdk"]
 
 [functions.environment]
   HUD_ENABLE = "true"
