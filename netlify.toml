@@ -7,6 +7,7 @@
 
 [functions."*"]
   node_bundler = "esbuild"
+  external_node_modules = ["hud-sdk"]
 
 [functions.environment]
   HUD_ENABLE = "true"
